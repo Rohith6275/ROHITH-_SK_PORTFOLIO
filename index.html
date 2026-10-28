@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rohith SK | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Rohith SK, BCS Computer Science student at KG College of Arts and Science (Class of 2028).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">ROHITH SK</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Computer Science Student</p>
+          <h1>Rohith SK</h1>
+          <p class="lead">BCS Computer Science student at KG College of Arts and Science, graduating in 2028.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn" href="https://github.com/Rohith6275" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <!--
+          PHOTO: save your photo as  assets/photo.jpg  (create an "assets" folder
+          next to this file). Until then, initials are shown instead.
+        -->
+        <div class="photo-wrap" id="photoWrap">
+          <img src="assets/photo.jpg" alt="Portrait of Rohith SK" id="profilePhoto" width="320" height="320">
+          <div class="photo-fallback" aria-hidden="true">RSK</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About</h2>
+        <p>I'm Rohith SK, a student pursuing a BCS in Computer Science at KG College of Arts and Science, with an expected graduation in 2028.</p>
+        <p>I'm building my foundation in programming with Python and Java, and I use CSS to style the interfaces I work on. I'm focused on learning the fundamentals well and turning them into real projects as I progress through my degree.</p>
+        <dl class="facts">
+          <div><dt>Degree</dt><dd>BCS Computer Science</dd></div>
+          <div><dt>College</dt><dd>KG College of Arts and Science</dd></div>
+          <div><dt>Graduation</dt><dd>2028</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container narrow">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>Java</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- Cards are generated from the PROJECTS list at the top of script.js -->
+        <div class="projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Have a question or an opportunity to share? Send a message, or reach out directly.</p>
+          <ul class="contact-links">
+            <li><span>Email</span><a href="mailto:rohithsk62@gmail.com">rohithsk62@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/Rohith6275" target="_blank" rel="noopener noreferrer">github.com/Rohith6275</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/rohith-sk-588454446" target="_blank" rel="noopener noreferrer">linkedin.com/in/rohith-sk-588454446</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Rohith SK</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
